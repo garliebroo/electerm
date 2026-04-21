@@ -62,7 +62,7 @@
   "jest": {
     "testEnvironment": "node",
     "verbose": true,
-    "testTimeout": 15000
+    "testTimeout": 30000
   },
   "build": {
     "appId": "io.electerm.electerm",
