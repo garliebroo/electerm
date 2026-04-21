@@ -13,6 +13,7 @@
     "webpack": "cross-env NODE_ENV=development webpack --config webpack.config.js --watch",
     "webpack:prod": "cross-env NODE_ENV=production webpack --config webpack.config.js",
     "lint": "eslint src --ext .js,.jsx",
+    "lint:fix": "eslint src --ext .js,.jsx --fix",
     "test": "jest",
     "postinstall": "electron-builder install-app-deps"
   },
@@ -75,7 +76,7 @@
       "target": ["nsis", "portable"]
     },
     "linux": {
-      "target": ["AppImage", "deb", "rpm"],
+      "target": ["AppImage", "deb"],
       "category": "TerminalEmulator"
     }
   },
